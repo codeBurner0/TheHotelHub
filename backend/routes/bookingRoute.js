@@ -1,12 +1,11 @@
 import { Router } from "express";
 const router = Router();
-import Booking from '../models/booking'
+import Booking from '../models/booking.js'
 //const Booking = require('../models/booking')
-import Room from "../models/room";
+import Room from "../models/room.js";
 import { v4 as uuidv4 } from 'uuid';
 
 import Stripe from 'stripe';
-import booking from "../models/booking";
 const stripe = new Stripe('<your_skey>');
 
 

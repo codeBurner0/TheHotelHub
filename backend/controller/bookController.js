@@ -1,4 +1,4 @@
-import  Rooms from "../models/room";
+import  Rooms from "../models/room.js";
 
 export const getallroomsbyid = async (req, res) => {
   const roomsid = req.body.roomsid;

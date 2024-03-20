@@ -1,7 +1,7 @@
 import { Router } from "express";
-import { getallrooms} from "../controller/roomController";
-import { getallroomsbyid} from "../controller/bookController";
-import  Rooms from "../models/room";
+import { getallrooms} from "../controller/roomController.js";
+import { getallroomsbyid} from "../controller/bookController.js";
+import  Rooms from "../models/room.js";
 
 
 // const express = require('express')
