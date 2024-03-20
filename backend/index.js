@@ -15,7 +15,8 @@ import bookingRoute from './routes/bookingRoute.js'
 const app = express();
 
 //middleware
-app.use(cors());
+app.use(cors(
+));
 
 app.use((req, res, next) => {
   res.header(
@@ -28,7 +29,7 @@ app.use((req, res, next) => {
 });
 
 app.get("/" , (req, res)=>{
-   res.json("hello world");
+   res.json("hello");
 })
 app.use(express.json())
 app.use('/api/rooms' , roomsRoute)
