@@ -17,7 +17,7 @@ const app = express();
 app.use(cors());
 
 app.get("/", (req, res) => {
-  res.json("hello world 2");
+  res.json("hello world 3");
 });
 app.use(express.json());
 app.use("/api/rooms", roomsRoute);
@@ -28,7 +28,6 @@ app.use("/api/booking", bookingRoute);
 //connection
 // const connectDB = require('./db')
 // connectDB()
-
 //mongodb direct connection
 mongoose
   .connect(
