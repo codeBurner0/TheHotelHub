@@ -17,7 +17,7 @@ const app = express();
 app.use(cors());
 
 app.get("/", (req, res) => {
-  res.json("hello world 3");
+  res.json("hello world 4");
 });
 app.use(express.json());
 app.use("/api/rooms", roomsRoute);
