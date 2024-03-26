@@ -31,7 +31,7 @@ app.use("/api/booking", bookingRoute);
 //mongodb direct connection
 mongoose
   .connect(
-    "mongodb+srv://Vidisha:vidisha@cluster0.mgwgzxk.mongodb.net/hotel-rooms?retryWrites=true&w=majority&appName=Cluster0"
+    "mongodb+srv://Vidisha:vidisha@cluster0.mgwgzxk.mongodb.net/hospital-rooms"
   )
   .then(() => console.log("Connected to mongo Successful"))
   .catch((err) => console.log(console.log(err)));
